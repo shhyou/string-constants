@@ -13,6 +13,7 @@
          (prefix-in portuguese: "private/portuguese-string-constants.rkt")
          (prefix-in japanese: "private/japanese-string-constants.rkt")
          (prefix-in traditional-chinese: "private/traditional-chinese-string-constants.rkt")
+         (prefix-in traditional-chinese-zh-tw: "private/traditional-chinese-zh-tw-string-constants.rkt")
          (prefix-in simplified-chinese: "private/simplified-chinese-string-constants.rkt")
          (prefix-in bulgarian: "private/bulgarian-string-constants.rkt")
          (prefix-in russian: "private/russian-string-constants.rkt")
