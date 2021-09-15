@@ -90,7 +90,7 @@ please adhere to these guidelines:
 
 (module english-string-constants "string-constant-lang.rkt"
   ;;; when translating this constant, substitute name of actual language for `English'
-  (is-this-your-native-language "Is English Your Native Language?")
+  (is-this-your-native-language "繁體中文（台灣）是您的母語嗎？")
 
   (#:define drr "DrRacket")
 
@@ -102,26 +102,26 @@ please adhere to these guidelines:
   ;; these two should probably be the same in all languages excepet English.
   ;; they are the button labels (under macos and windows, respectively)
   ;; that go the with the string above.
-  (accept-and-quit "Accept and Quit")
-  (accept-and-exit "Accept and Exit")
+  (accept-and-quit "同意並離開")
+  (accept-and-exit "同意並離開")
 
   ;;; general purpose (DrRacket is hereby a word in every language, by decree of Robby :)
   (plt "PLT")
   (drscheme drr)
   (drracket drr)
-  (ok "OK")
-  (cancel "Cancel")
-  (abort "Abort")
-  (untitled "Untitled")
-  (untitled-n "Untitled ~a")
-  (warning "Warning")
-  (error "Error")
-  (close "Close") ;; as in, close an open window or tab. must match close-menu-item
+  (ok "是")
+  (cancel "取消")
+  (abort "中止")
+  (untitled "未命名")
+  (untitled-n "未命名 ~a")
+  (warning "警告")
+  (error "錯誤")
+  (close "關閉") ;; as in, close an open window or tab. must match close-menu-item
   ;; in the sense that, when the &s have been stripped from
   ;; close-menu-item, it must be the same string as this.
-  (close-window "Close Window")
-  (stop "Stop")
-  (&stop "&Stop") ;; for use in button and menu item labels, with short cut.
+  (close-window "關閉視窗")
+  (stop "停止")
+  (&stop "停止（&S）") ;; for use in button and menu item labels, with short cut.
   (are-you-sure-delete? "Are you sure you want to delete ~a?") ;; ~a is a filename or directory name
   (are-you-sure-replace? "Are you sure you want to replace ~a?") ;; ~a is a filename or directory name
   (ignore "Ignore")
@@ -638,13 +638,13 @@ please adhere to these guidelines:
   (open-files-in-tabs "Open files in separate tabs (not separate windows)")
   (show-interactions-on-execute "Automatically open interactions window when running a program")
   (switch-to-module-language-automatically
-   "Automatically switch to the module language when opening a module")
+   "開啟新分頁時，自動切換使用語言")
   ;; in preferences, below the checkbox one line above this one
   (interactions-beside-definitions "Put the interactions window beside the definitions window")
-  (show-line-numbers "Show line numbers")
+  (show-line-numbers "顯示行號")
   ;; just like the above, but capitalized for appearance in a menu item
-  (show-line-numbers/menu "Show Line &Numbers")
-  (hide-line-numbers/menu "Hide Line &Numbers")
+  (show-line-numbers/menu "顯示行號（&N）")
+  (hide-line-numbers/menu "隱藏行號（&N）")
   (show-line-numbers-in-definitions "Show All Line Numbers in Definitions")
   ;; the constant above shows up in the popup menu item in the bottom of
   ;; the drracket window; controls the line numbers on each line in the definitions;
@@ -655,17 +655,17 @@ please adhere to these guidelines:
   (show-column-width-guide "Show Column Width Guide at ~a Columns") ;; filled with a number > 2
   (limit-interactions-size "Limit interactions size")
   ;; this is in the color section already, so shorten the name a little
-  (background-color "Background")
+  (background-color "背景")
   ;; used for configuring colors, but doesn't need the word "color"
-  (default-text-color "Default text")
-  (choose-a-background-color "Please choose a background color")
-  (revert-to-defaults "Revert All Preferences to Defaults")
+  (default-text-color "文字")
+  (choose-a-background-color "請選擇背景顏色")
+  (revert-to-defaults "重設所有偏好設定至預設值")
   ;; used in the preferences dialog to undo preference changes
-  (undo-changes "Undo Changes and Close")
+  (undo-changes "還原並關閉")
 
   (color-schemes "Color Schemes") ;; the label in the preferences dialog for the color scheme panel
-  (classic-color-scheme "Classic") ;; formerly called 'black on white'
-  (modern-color-scheme "Modern")   ;; an attempt to be more color-blind friendly
+  (classic-color-scheme "經典") ;; formerly called 'black on white'
+  (modern-color-scheme "現代")   ;; an attempt to be more color-blind friendly
   ;; clicking the buttons changes the color schemes to some defaults that've been set up.
   (white-on-black-color-scheme "White on Black")
   ; drracket additions to the color scheme dialog; two buttons
@@ -681,8 +681,8 @@ please adhere to these guidelines:
   (font-example-string "The quick brown fox jumped over the lazy dogs.")
 
   (change-font-button-label "Change")
-  (fonts "Fonts")
-  (other... "Other…") ;; used in the font choice menu item
+  (fonts "字體")
+  (other... "其他…") ;; used in the font choice menu item
 
   ; filled with type of font, eg modern, swiss, etc.
   (choose-a-new-font "Please choose a new “~a” font")
