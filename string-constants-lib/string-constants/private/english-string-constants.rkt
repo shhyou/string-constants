@@ -520,6 +520,9 @@ please adhere to these guidelines:
   (browser-cmdline-expl-line-1 "(Command line formed by concatenating pre-text, URL,")
   ; ... line 2. (Anyone need more lines?)
   (browser-cmdline-expl-line-2 "and post-text, with no extra spaces between them.)")
+  ;; The browser config that disallows page anchors (#) and query strings (?q=...)
+  (external-browser-allow-trampoline
+   "Do not use page anchors or query strings in the URLs.")
   (install? "Install?")  ;; if a .plt file is found (title of dialog)
   (you-have-selected-an-installable-package "You have selected an installable package.")
   (do-you-want-to-install-it? "Do you want to install it?")
